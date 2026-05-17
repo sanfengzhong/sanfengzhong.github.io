@@ -480,304 +480,23 @@
                 <h3 class="text-xl font-bold text-gray-title">针对PUGC稿件淘汰稿件与稿件流转，我做了哪些动作</h3>
             </div>
 
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPT内容网页版</title>
-    <style>
-        /* 全局基础样式 */
-        .ppt-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            font-family: "微软雅黑", sans-serif;
-        }
-
-        /* 单页容器 */
-        .ppt-page {
-            margin-bottom: 80px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #eee;
-        }
-
-        /* 页面标题 */
-        .page-title {
-            font-size: 28px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .page-title::before {
-            content: ">>>>";
-            color: #f5a623; /* 标题前的箭头，和PPT风格统一 */
-        }
-
-        /* 双栏布局（前4页通用） */
-        .two-column-layout {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 30px;
-        }
-        .column-left, .column-right {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .case-img, .feedback-img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .case-before-after {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .case-before-after .arrow {
-            font-size: 24px;
-            color: #f5a623;
-        }
-        .pain-point-list {
-            list-style: none;
-            padding: 0;
-        }
-        .pain-point-list li {
-            background: #e8f0fe;
-            padding: 12px 20px;
-            border-radius: 20px;
-            margin-bottom: 10px;
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        /* 时间轴布局（第5页专用） */
-        .timeline-layout {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .timeline-item {
-            flex: 1;
-            text-align: center;
-        }
-        .timeline-img {
-            width: 100%;
-            max-width: 280px;
-            margin: 0 auto 15px;
-            border-radius: 8px;
-        }
-        .timeline-arrow {
-            font-size: 30px;
-            color: #333;
-            font-weight: bold;
-        }
-
-        /* 底部总结文案 */
-        .page-summary {
-            font-size: 22px;
-            font-weight: bold;
-            color: #333;
-            text-align: center;
-            background: #e6f7ff;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        /* 响应式适配（手机端自动变成单栏） */
-        @media (max-width: 768px) {
-            .two-column-layout {
-                grid-template-columns: 1fr;
-            }
-            .timeline-layout {
-                flex-direction: column;
-            }
-            .timeline-arrow {
-                transform: rotate(90deg);
-                margin: 10px 0;
-            }
-            .page-title {
-                font-size: 24px;
-            }
-        }
-
-        /* 你原有样式兼容 */
-        .img-display{max-width:100%;height:auto;display:block;margin:0 auto;}
-        .bg-gray-bg{background:#f9fafb;}
-        .rounded-2xl{border-radius:1rem;}
-        .p-4{padding:1rem;}
-        .flex{display:flex;}
-        .justify-center{justify-content:center;}
-        .rounded-xl{border-radius:0.75rem;}
-        .mb-8{margin-bottom:2rem;}
-        .mb-16{margin-bottom:4rem;}
-        .py-24{padding-top:6rem;padding-bottom:6rem;}
-        .max-w-7xl{max-width:1280px;}
-        .mx-auto{margin-left:auto;margin-right:auto;}
-        .px-6{padding-left:1.5rem;padding-right:1.5rem;}
-        .fade-section{opacity:1;}
-        .text-center{text-align:center;}
-        .section-badge{padding:0.5rem 1rem;border-radius:999px;display:inline-block;}
-        .bg-primary-light{background:#dbeafe;}
-        .text-primary{color:#3b82f6;}
-        .mb-4{margin-bottom:1rem;}
-        .text-xs{font-size:0.75rem;}
-        .font-bold{font-weight:700;}
-        .tracking-wider{letter-spacing:0.05em;}
-        .text-3xl{font-size:1.875rem;}
-        .md\:text-4xl{font-size:2.25rem;}
-        .text-gray-title{color:#1f2937;}
-        .mb-3{margin-bottom:0.75rem;}
-        .text-gray-caption{color:#6b7280;}
-        .text-lg{font-size:1.125rem;}
-        .items-center{align-items:center;}
-        .gap-3{gap:0.75rem;}
-        .w-1{width:0.25rem;}
-        .h-8{height:2rem;}
-        .rounded-full{border-radius:9999px;}
-        .bg-primary{background:#3b82f6;}
-        .text-xl{font-size:1.25rem;}
-        .grid{display:grid;}
-        .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
-        .md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr));}
-        .gap-4{gap:1rem;}
-        .bg-white{background:#ffffff;}
-        .p-5{padding:1.25rem;}
-        .uppercase{text-transform:uppercase;}
-        .text-sm{font-size:0.875rem;}
-        .leading-relaxed{line-height:1.6;}
-        .text-gray-body{color:#4b5563;}
-        .p-8{padding:2rem;}
-        .border{border-width:1px;}
-        .border-gray-border{border-color:#e5e7eb;}
-        .gap-6{gap:1.5rem;}
-        .md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr));}
-        .num-highlight{font-size:2rem;}
-        .bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops));}
-        .from-primary{--tw-gradient-from:#3b82f6;--tw-gradient-to:rgb(59 130 246/0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to);}
-        .to-blue-400{--tw-gradient-to:#60a5fa;}
-        .transition-all{transition-property:all;}
-        .duration-1000{transition-duration:1000ms;}
-        .mt-3{margin-top:0.75rem;}
-        .mt-5{margin-top:1.25rem;}
-        .bg-warning-light{background:#fef3c7;}
-        .bg-warning{background:#f59e0b;}
-        .text-warning{color:#d97706;}
-        .bg-accent{background:#10b981;}
-        .stagger-children>*{opacity:1;}
-        .card-hover{transition:all 0.3s ease;}
-        .card-hover:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.1);}
-        .w-8{width:2rem;}
-        .h-8{height:2rem;}
-        .rounded-lg{border-radius:0.5rem;}
-        .p-6{padding:1.5rem;}
-    </style>
-</head>
-<body>
-    <div class="ppt-container">
-        <!-- 第1页：淘汰稿件动作 -->
-        <section class="ppt-page">
-            <h2 class="page-title">针对PUGC淘汰稿件，我做了哪些动作？</h2>
-            <div class="two-column-layout">
-                <div class="column-left">
-                    <div class="case-before-after">
-                        <img src="01.png" class="case-img">
-                        <div class="arrow">→</div>
-                        <img src="02.png" class="case-img">
-                    </div>
-                    <p class="case-desc">分析淘汰稿件质量差异+结合拒稿原因提出意见 → 提升稿件合格率</p>
-                </div>
-                <div class="column-right">
-                    <img src="03.png" class="feedback-img">
-                    <p class="feedback-desc">切实帮助设计师过稿，收获好评</p>
+            <!-- 针对淘汰稿件的动作 - 配图5 -->
+            <div class="mb-8">
+                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
+                    <img src="05.png" alt="针对PUGC淘汰稿件的动作" class="img-display rounded-xl">
                 </div>
             </div>
-            <p class="page-summary">精细化沟通引导，实现淘汰稿件合格与创作者口碑的双丰收</p>
-        </section>
 
-        <!-- 第2页：稿件流转动作 -->
-        <section class="ppt-page">
-            <h2 class="page-title">针对PUGC稿件流转，我做了哪些动作？</h2>
-            <div class="two-column-layout">
-                <div class="column-left">
-                    <img src="04.png" class="case-img">
-                    <p class="case-desc">节点强跟进、标准即时对齐与反馈</p>
-                </div>
-                <div class="column-right">
-                    <img src="05.png" class="case-img">
-                    <p class="case-desc">教程1v1引导，解决设计师“理解难、修改慢”痛点</p>
+            <!-- 针对稿件流转的动作 - 配图6 -->
+            <div>
+                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
+                    <img src="06.png" alt="针对PUGC稿件流转的动作" class="img-display rounded-xl">
                 </div>
             </div>
-            <p class="page-summary">节点强跟进、标准即时对齐与反馈、教程1v1引导，从源头解决设计师痛点</p>
-        </section>
-
-        <!-- 第3页：素材获取痛点 -->
-        <section class="ppt-page">
-            <h2 class="page-title">PUGC设计师转型UGC痛点——素材获取较不方便</h2>
-            <div class="two-column-layout">
-                <div class="column-left">
-                    <img src="06.png" class="feedback-img">
-                </div>
-                <div class="column-right">
-                    <ul class="pain-point-list">
-                        <li>侧边栏素材搜索不稳定</li>
-                        <li>花瓣素材下载次数限制，不够用</li>
-                        <li>AI修改麻烦、不可编辑</li>
-                        <li>二创容易禁锢灵感，同质化</li>
-                    </ul>
-                </div>
-            </div>
-            <p class="page-summary">设计师渴望开放素材中心，提升创作效率。</p>
-        </section>
-
-        <!-- 第4页：质量与收益痛点 -->
-        <section class="ppt-page">
-            <h2 class="page-title">PUGC设计师转型UGC痛点——稿件质量、稳定收益</h2>
-            <div class="two-column-layout">
-                <div class="column-left">
-                    <img src="07.png" class="feedback-img">
-                </div>
-                <div class="column-right">
-                    <img src="08.png" class="feedback-img">
-                </div>
-            </div>
-            <p class="page-summary">创作者既担心失去审核支持后作品质量下滑、影响收益，也因收益的不确定性而降低了持续投稿的意愿。</p>
-        </section>
-
-        <!-- 第5页：优化建议 -->
-        <section class="ppt-page">
-            <h2 class="page-title">立足痛点——UGC创作者增长策略优化建议</h2>
-            <div class="timeline-layout">
-                <div class="timeline-item">
-                    <img src="09.png" class="timeline-img">
-                    <h3>增设新手培育期</h3>
-                    <p>入门缓冲阶段：新手设计师完成3篇合格稿件，30天内可兑换奖励新人专属成长礼包。提升新手设计师稿件质量与投稿意愿。</p>
-                </div>
-                <div class="timeline-arrow">→</div>
-                <div class="timeline-item">
-                    <img src="10.png" class="timeline-img">
-                    <h3>丰富稿豆使用场景</h3>
-                    <p>建立完善的稿豆兑换机制，提升设计师对稿豆的价值认同度</p>
-                </div>
-                <div class="timeline-arrow">→</div>
-                <div class="timeline-item">
-                    <img src="11.png" class="timeline-img">
-                    <h3>创作者分层运营</h3>
-                    <p>精细化运营，设计分层运营体系</p>
-                </div>
-            </div>
-            <p class="page-summary">新手礼包稳信心，稿豆兑换提动力，分层运营促留存</p>
-        </section>
+        </div>
     </div>
+</section>
 
-<!-- ==================== 你要求 【完全保留不动】 的部分 ==================== -->
 <!-- ==================== PART 3: CURRENT WORK & REFLECTIONS ==================== -->
 <section id="reflection" class="py-24 bg-gray-bg">
     <div class="max-w-7xl mx-auto px-6">
@@ -855,14 +574,14 @@
             </div>
         </div>
 
-        <!-- ===== 痛点模块补充配图 ===== -->
+        <!-- ===== 修改4: 痛点模块补充配图 ===== -->
         <div class="fade-section mb-16">
             <div class="flex items-center gap-3 mb-8">
                 <div class="w-1.5 h-8 rounded-full bg-warning"></div>
                 <h3 class="text-xl font-bold text-gray-title">PUGC设计师转型UGC痛点</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- 素材获取痛点 -->
+                <!-- 素材获取痛点 - 配图7 -->
                 <div class="bg-white rounded-2xl p-6 border border-gray-border">
                     <div class="flex items-center gap-2 mb-4">
                         <svg class="w-5 h-5 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
@@ -870,7 +589,7 @@
                     </div>
                     <img src="07.png" alt="素材获取痛点" class="img-display rounded-xl mb-4">
                 </div>
-                <!-- 稿件质量与稳定收益痛点 -->
+                <!-- 稿件质量与稳定收益痛点 - 配图8 -->
                 <div class="bg-white rounded-2xl p-6 border border-gray-border">
                     <div class="flex items-center gap-2 mb-4">
                         <svg class="w-5 h-5 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
@@ -881,7 +600,7 @@
             </div>
         </div>
 
-        <!-- ===== 优化建议模块添加配图 ===== -->
+        <!-- ===== 修改5: 优化建议模块添加配图9 ===== -->
         <div class="fade-section">
             <div class="flex items-center gap-3 mb-8">
                 <div class="w-1.5 h-8 rounded-full bg-primary"></div>
@@ -894,8 +613,6 @@
     </div>
 </section>
 
-</body>
-</html>
 <!-- ==================== PART 4: POSITIONING & FUTURE ==================== -->
 <section id="future" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
