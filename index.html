@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0133)file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html -->
+<html lang="zh-CN" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>转正述职 - 钟钟 | 2026.5</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="./index_files/saved_resource"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="./index_files/css2" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#165DFF',
-                        'primary-dark': '#0E42D2',
-                        'primary-light': '#E8F0FF',
-                        'primary-50': '#F2F7FF',
+                        primary: '#1e3a5f',
+                        'primary-dark': '#0f1f33',
+                        'primary-light': '#e8f4fc',
+                        'primary-50': '#f5f9fc',
                         accent: '#00B42A',
                         'accent-light': '#E8FFEA',
                         warning: '#FF7D00',
@@ -27,7 +27,10 @@
                         'gray-body': '#4E5969',
                         'gray-caption': '#86909C',
                         'gray-border': '#E5E6EB',
-                        'gray-bg': '#F7F8FA',
+                        'gray-bg': '#faf8f5',
+                        'beige-bg': '#faf8f5',
+                        'light-blue': '#d4e9f7',
+                        'orange-arrow': '#FF7D00',
                     },
                     fontFamily: {
                         sans: ['Inter', 'Noto Sans SC', 'system-ui', 'sans-serif'],
@@ -39,16 +42,16 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif; background: #fff; color: #1D2129; }
+        body { font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif; background: #faf8f5; color: #1D2129; }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #F7F8FA; }
         ::-webkit-scrollbar-thumb { background: #C9CDD4; border-radius: 3px; }
         ::-webkit-scrollbar-thumb:hover { background: #86909C; }
         .nav-fixed { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(255,255,255,0.85); border-bottom: 1px solid rgba(229,230,235,0.6); }
         .nav-link { position: relative; transition: color 0.3s; }
-        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #165DFF; transition: width 0.3s; border-radius: 1px; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #1e3a5f; transition: width 0.3s; border-radius: 1px; }
         .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-        .nav-link:hover, .nav-link.active { color: #165DFF; }
+        .nav-link:hover, .nav-link.active { color: #1e3a5f; }
         .fade-section { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
         .fade-section.visible { opacity: 1; transform: translateY(0); }
         .fade-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
@@ -63,8 +66,8 @@
         .stagger-children.visible > *:nth-child(5) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
         .stagger-children.visible > *:nth-child(6) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(22,93,255,0.12); }
-        .hero-gradient { background: linear-gradient(135deg, #0B1A3E 0%, #165DFF 50%, #4080FF 100%); }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(30,58,95,0.12); }
+        .hero-gradient { background: linear-gradient(135deg, #0f1f33 0%, #1e3a5f 50%, #2d5a8a 100%); }
         .hero-pattern { background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.06) 0%, transparent 40%), radial-gradient(circle at 60% 80%, rgba(255,255,255,0.04) 0%, transparent 40%); }
         .section-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 100px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; }
         .num-highlight { font-variant-numeric: tabular-nums; }
@@ -74,8 +77,176 @@
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
         .float-anim { animation: float 3s ease-in-out infinite; }
         .img-display { max-width: 100%; height: auto; display: block; }
+        .img-border { border: 1px solid #d1d5db; border-radius: 8px; }
+        .module-title { font-size: 28px; font-weight: 700; color: #1e3a5f; text-align: center; margin-bottom: 24px; }
+        .sub-title { font-size: 18px; color: #1e3a5f; font-weight: 600; text-align: center; margin-bottom: 40px; }
+        .small-title { background: #d4e9f7; padding: 8px 16px; border-radius: 6px; font-size: 14px; font-weight: 600; color: #1e3a5f; display: inline-block; margin-bottom: 16px; }
+        .summary-text { font-weight: 700; text-align: center; color: #1e3a5f; font-size: 16px; margin-top: 40px; padding: 16px; background: #f5f9fc; border-radius: 8px; }
+        .pain-tag { background: #fff; border: 2px solid #d4e9f7; border-radius: 12px; padding: 16px 24px; text-align: center; font-weight: 500; color: #1D2129; }
+        .arrow { color: #FF7D00; font-size: 24px; font-weight: bold; }
     </style>
-</head>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, Noto Sans SC, system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-20{bottom:5rem}.left-0{left:0px}.left-10{left:2.5rem}.left-20{left:5rem}.right-0{right:0px}.right-10{right:2.5rem}.right-20{right:5rem}.top-0{top:0px}.top-20{top:5rem}.z-10{z-index:10}.z-50{z-index:50}.col-span-2{grid-column:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-1{margin-top:0.25rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-24{height:6rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-72{height:18rem}.h-8{height:2rem}.h-80{height:20rem}.h-96{height:24rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-24{width:6rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-72{width:18rem}.w-8{width:2rem}.w-80{width:20rem}.w-96{width:24rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-bl-full{border-bottom-left-radius:9999px}.border{border-width:1px}.border-2{border-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-gray-border{--tw-border-opacity:1;border-color:rgb(229 230 235 / var(--tw-border-opacity, 1))}.border-light-blue{--tw-border-opacity:1;border-color:rgb(212 233 247 / var(--tw-border-opacity, 1))}.border-primary{--tw-border-opacity:1;border-color:rgb(30 58 95 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/30{border-color:rgb(255 255 255 / 0.3)}.bg-accent{--tw-bg-opacity:1;background-color:rgb(0 180 42 / var(--tw-bg-opacity, 1))}.bg-accent-light{--tw-bg-opacity:1;background-color:rgb(232 255 234 / var(--tw-bg-opacity, 1))}.bg-beige-bg{--tw-bg-opacity:1;background-color:rgb(250 248 245 / var(--tw-bg-opacity, 1))}.bg-blue-400\/10{background-color:rgb(96 165 250 / 0.1)}.bg-danger{--tw-bg-opacity:1;background-color:rgb(245 63 63 / var(--tw-bg-opacity, 1))}.bg-danger-light{--tw-bg-opacity:1;background-color:rgb(255 236 232 / var(--tw-bg-opacity, 1))}.bg-danger\/5{background-color:rgb(245 63 63 / 0.05)}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-green-400{--tw-bg-opacity:1;background-color:rgb(74 222 128 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(30 58 95 / var(--tw-bg-opacity, 1))}.bg-primary-light{--tw-bg-opacity:1;background-color:rgb(232 244 252 / var(--tw-bg-opacity, 1))}.bg-primary\/10{background-color:rgb(30 58 95 / 0.1)}.bg-primary\/40{background-color:rgb(30 58 95 / 0.4)}.bg-primary\/5{background-color:rgb(30 58 95 / 0.05)}.bg-primary\/60{background-color:rgb(30 58 95 / 0.6)}.bg-primary\/80{background-color:rgb(30 58 95 / 0.8)}.bg-warning{--tw-bg-opacity:1;background-color:rgb(255 125 0 / var(--tw-bg-opacity, 1))}.bg-warning-light{--tw-bg-opacity:1;background-color:rgb(255 247 232 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-primary{--tw-gradient-from:#1e3a5f var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 58 95 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-400{--tw-gradient-to:#60a5fa var(--tw-gradient-to-position)}.to-blue-500{--tw-gradient-to:#3b82f6 var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pl-3{padding-left:0.75rem}.pl-4{padding-left:1rem}.pt-16{padding-top:4rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-accent{--tw-text-opacity:1;color:rgb(0 180 42 / var(--tw-text-opacity, 1))}.text-danger{--tw-text-opacity:1;color:rgb(245 63 63 / var(--tw-text-opacity, 1))}.text-gray-body{--tw-text-opacity:1;color:rgb(78 89 105 / var(--tw-text-opacity, 1))}.text-gray-caption{--tw-text-opacity:1;color:rgb(134 144 156 / var(--tw-text-opacity, 1))}.text-gray-title{--tw-text-opacity:1;color:rgb(29 33 41 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(30 58 95 / var(--tw-text-opacity, 1))}.text-warning{--tw-text-opacity:1;color:rgb(255 125 0 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/40{color:rgb(255 255 255 / 0.4)}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-300{transition-duration:300ms}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(30 58 95 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:col-span-1{grid-column:span 1 / span 1}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style><style>.Po4BvhR1CK2tJaywJ6AN path {
+  fill: var(--icon-path-fill);
+}
+.Oz4yDjua3Qe6thqkZYf_ path {
+  transition: 0.2s all;
+}
+.Oz4yDjua3Qe6thqkZYf_:hover path {
+  fill: var(--icon-hover-fill);
+}
+</style><style>/* ！！！切勿直接改动该文件，该文件由 generator.ts 自动生成！！！ */
+/* !!! DONT MODIFY THIS FILE DIRECTLY, THIS FILE IS GENERATED BY generator.ts AUTOMATICALLY !!! */
+.ibW4Oa5B7s2zJKKZ4pCg {
+  user-select: none;
+}
+.AtqKyJetjrG4smuk35Np {
+  max-width: 346px;
+  width: auto;
+  height: 36px;
+  background-color: var(--quark-style-white-color, #fff);
+  padding-left: 10px;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--quark-style-gray-20-color, rgba(6, 10, 38, 0.12));
+  box-shadow: 0 12px 32px -6px var(--quark-style-gray-30-fixed-color, rgba(6, 10, 38, 0.24));
+  border-radius: 10px;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .g6iGsZa_KHMeW2yICzQQ {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .e4UXx38MPgfHdym_Lzt0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 28px;
+  padding: 0 6px;
+  margin-right: 2px;
+  border-radius: 6px;
+  column-gap: 4px;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .e4UXx38MPgfHdym_Lzt0:hover:not(.ibW4Oa5B7s2zJKKZ4pCg .kNOcXLDT_cCrcoY8LTm8) {
+  background: var(--quark-style-gray-10-color, rgba(6, 10, 38, 0.06));
+}
+.ibW4Oa5B7s2zJKKZ4pCg .kNOcXLDT_cCrcoY8LTm8 {
+  cursor: default;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .kNOcXLDT_cCrcoY8LTm8 .Va3czASiR9Zztyl_lD4M {
+  color: var(--quark-style-gray-40-color, rgba(6, 10, 38, 0.4)) !important;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .e4UXx38MPgfHdym_Lzt0 .Va3czASiR9Zztyl_lD4M {
+  font-size: 12px;
+  color: var(--quark-style-gray-color, #060A26);
+  line-height: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .llw0qsmiI_08u93bFdNg {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  overflow: visible !important;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .LEo8kpqIERehkv8AhAfG {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: visible !important;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .LEo8kpqIERehkv8AhAfG:hover {
+  background: var(--quark-style-gray-10-color, rgba(6, 10, 38, 0.06));
+}
+.ibW4Oa5B7s2zJKKZ4pCg .zoNmooxAnbLEJSN8m1Jg {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  max-height: 136px;
+  height: auto;
+  top: 36px;
+  right: -5px;
+  padding: 4px 0;
+  background-color: var(--quark-style-white-color, #fff);
+  border: 1px solid var(--quark-style-gray-20-color, rgba(6, 10, 38, 0.12));
+  box-shadow: 0 4px 16px -6px var(--quark-style-gray-20-fixed-color, rgba(6, 10, 38, 0.12));
+  border-radius: 8px;
+  overflow: visible !important;
+  row-gap: 4px;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .O1imPofna4elG_8NcQnR {
+  top: -77px;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .mdH0IY7jS3Swn5vdX6tz {
+  width: 102px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  column-gap: 8px;
+  border-radius: 6px;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .mdH0IY7jS3Swn5vdX6tz:hover:not(.ibW4Oa5B7s2zJKKZ4pCg .dEdHLVmn_L2GAzb_cmwt) {
+  background: var(--quark-style-gray-10-color, rgba(6, 10, 38, 0.06));
+}
+.ibW4Oa5B7s2zJKKZ4pCg .dEdHLVmn_L2GAzb_cmwt {
+  cursor: default;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .dEdHLVmn_L2GAzb_cmwt .zEraruudgjR2MToGu4Kw {
+  color: var(--quark-style-gray-40-color, rgba(6, 10, 38, 0.4)) !important;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .XfCMwvO0DsqFCeyzPYP2 {
+  width: 16px;
+  height: 16px;
+}
+.ibW4Oa5B7s2zJKKZ4pCg .zEraruudgjR2MToGu4Kw {
+  font-size: 12px;
+  color: var(--quark-style-gray-color, #060A26);
+}
+.ibW4Oa5B7s2zJKKZ4pCg .KZeoAuXbMIkWzOT4PcH5 {
+  width: 100%;
+  height: 1px;
+  background: var(--quark-style-gray-10-color, rgba(6, 10, 38, 0.06));
+}
+.ZL32C_XdLL8UQRZ3zObd {
+  display: flex;
+  align-items: center;
+}
+.u5llx7cIQZLdrjP5Vag1 {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-right: 12px;
+  background: var(--quark-style-gray-60-color, rgba(6, 10, 38, 0.6));
+}
+.ZL32C_XdLL8UQRZ3zObd .LEo8kpqIERehkv8AhAfG {
+  border-radius: 16px !important;
+  background: var(--quark-style-gray-60-color, rgba(6, 10, 38, 0.6)) !important;
+}
+.ZL32C_XdLL8UQRZ3zObd .zoNmooxAnbLEJSN8m1Jg {
+  right: 0 !important;
+}
+.ZL32C_XdLL8UQRZ3zObd {
+  overflow: visible !important;
+}
+</style></head>
 <body>
 
 <!-- ==================== NAVIGATION ==================== -->
@@ -88,23 +259,23 @@
             <span class="font-semibold text-gray-title text-sm">转正述职</span>
         </div>
         <div class="hidden md:flex items-center gap-8">
-            <a href="#intro" class="nav-link text-sm text-gray-body font-medium">自我介绍</a>
-            <a href="#performance" class="nav-link text-sm text-gray-body font-medium">工作成果</a>
-            <a href="#reflection" class="nav-link text-sm text-gray-body font-medium">当前工作</a>
-            <a href="#future" class="nav-link text-sm text-gray-body font-medium">个人规划</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#intro" class="nav-link text-sm text-gray-body font-medium">自我介绍</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#performance" class="nav-link text-sm text-gray-body font-medium">工作成果</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#reflection" class="nav-link text-sm text-gray-body font-medium">当前工作</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#future" class="nav-link text-sm text-gray-body font-medium">个人规划</a>
         </div>
         <div class="md:hidden">
             <button id="mobileMenuBtn" class="p-2 rounded-lg hover:bg-gray-100 transition">
-                <svg class="w-5 h-5 text-gray-body" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg class="w-5 h-5 text-gray-body" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
     </div>
     <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-border px-6 py-4">
         <div class="flex flex-col gap-3">
-            <a href="#intro" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">自我介绍</a>
-            <a href="#performance" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">工作成果</a>
-            <a href="#reflection" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">当前工作</a>
-            <a href="#future" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">个人规划</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#intro" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">自我介绍</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#performance" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">工作成果</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#reflection" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">当前工作</a>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#future" class="text-sm text-gray-body font-medium py-2 hover:text-primary transition">个人规划</a>
         </div>
     </div>
 </nav>
@@ -116,55 +287,55 @@
         <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
     </div>
     <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div class="fade-section">
+        <div class="fade-section visible">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-8">
                 <div class="w-2 h-2 rounded-full bg-green-400 pulse-soft"></div>
                 <span class="text-white/80 text-sm font-medium">创作者运营实习生 · 转正述职答辩</span>
             </div>
         </div>
-        <h1 class="fade-section text-6xl md:text-8xl font-black mb-6 leading-tight tracking-tight" style="color:#60a5fa;">
+        <h1 class="fade-section text-6xl md:text-8xl font-black mb-6 leading-tight tracking-tight visible" style="color:#60a5fa;">
             转正述职报告
         </h1>
-        <p class="fade-section text-2xl md:text-3xl mb-3 font-light" style="color:#93c5fd;">2026.5</p>
-        <p class="fade-section text-lg md:text-xl mb-12" style="color:#93c5fd;">创作者运营实习生 · 钟钟</p>
+        <p class="fade-section text-2xl md:text-3xl mb-3 font-light visible" style="color:#93c5fd;">2026.5</p>
+        <p class="fade-section text-lg md:text-xl mb-12 visible" style="color:#93c5fd;">创作者运营实习生 · 钟钟</p>
         <!-- Navigation Buttons -->
         <div class="fade-section flex flex-wrap items-center justify-center gap-4">
-            <a href="#intro" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-primary font-semibold text-sm hover:bg-gray-100 transition">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#intro" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-primary font-semibold text-sm hover:bg-gray-100 transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                 开始浏览
             </a>
-            <a href="#performance" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-medium text-sm hover:bg-white/20 transition">
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#performance" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-medium text-sm hover:bg-white/20 transition">
                 跳转工作成果
             </a>
-            <a href="#reflection" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-medium text-sm hover:bg-white/20 transition">
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#reflection" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-medium text-sm hover:bg-white/20 transition">
                 跳转当前工作
             </a>
-            <a href="#future" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-medium text-sm hover:bg-white/20 transition">
+            <a href="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/index.html#future" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-white/30 text-white font-medium text-sm hover:bg-white/20 transition">
                 跳转个人规划
             </a>
         </div>
         <div class="fade-section mt-16 float-anim">
-            <svg class="w-6 h-6 text-white/40 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            <svg class="w-6 h-6 text-white/40 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
         </div>
     </div>
 </section>
 
 <!-- ==================== PART 1: SELF INTRODUCTION ==================== -->
-<section id="intro" class="py-24 bg-white">
+<section id="intro" class="py-24 bg-beige-bg">
     <div class="max-w-7xl mx-auto px-6">
         <div class="fade-section text-center mb-16">
             <div class="section-badge bg-primary-light text-primary mb-4">
                 <span class="text-xs font-bold tracking-wider">PART 01</span>
             </div>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-title mb-3">自我介绍与个人成长</h2>
-            <p class="text-gray-caption text-lg">Self-Introduction & Personal Growth</p>
+            <p class="text-gray-caption text-lg">Self-Introduction &amp; Personal Growth</p>
         </div>
 
         <!-- Personal Info Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 stagger-children">
             <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border">
                 <div class="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
                 </div>
                 <h3 class="font-semibold text-gray-title mb-2">毕业院校</h3>
                 <p class="text-primary font-bold text-lg">集美大学</p>
@@ -172,7 +343,7 @@
             </div>
             <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border">
                 <div class="w-10 h-10 rounded-xl bg-accent-light flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                 </div>
                 <h3 class="font-semibold text-gray-title mb-2">平均绩点</h3>
                 <p class="text-accent font-bold text-2xl num-highlight">4.09<span class="text-sm font-normal text-gray-caption"> / 5</span></p>
@@ -180,7 +351,7 @@
             </div>
             <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border">
                 <div class="w-10 h-10 rounded-xl bg-warning-light flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    <svg class="w-5 h-5 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
                 </div>
                 <h3 class="font-semibold text-gray-title mb-2">获奖情况</h3>
                 <p class="text-warning font-bold text-lg">专业奖学金 ×8</p>
@@ -188,7 +359,7 @@
             </div>
             <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border">
                 <div class="w-10 h-10 rounded-xl bg-danger-light flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-danger" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    <svg class="w-5 h-5 text-danger" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                 </div>
                 <h3 class="font-semibold text-gray-title mb-2">校园经历</h3>
                 <p class="text-danger font-bold text-lg">志愿时长 182h</p>
@@ -198,36 +369,36 @@
 
         <!-- Personal Traits -->
         <div class="fade-section mb-20">
-            <div class="bg-gray-bg rounded-2xl p-8">
+            <div class="bg-white rounded-2xl p-8 border border-gray-border">
                 <h3 class="font-semibold text-gray-title mb-6 text-center">个人特点</h3>
                 <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                     <div class="text-center p-4">
                         <div class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </div>
                         <p class="text-sm font-medium text-gray-title">学习能力强</p>
                     </div>
                     <div class="text-center p-4">
                         <div class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
                         </div>
                         <p class="text-sm font-medium text-gray-title">沟通能力强</p>
                     </div>
                     <div class="text-center p-4">
                         <div class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         </div>
                         <p class="text-sm font-medium text-gray-title">责任心与执行力强</p>
                     </div>
                     <div class="text-center p-4">
                         <div class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                         </div>
                         <p class="text-sm font-medium text-gray-title">适应力强</p>
                     </div>
                     <div class="text-center p-4 col-span-2 md:col-span-1">
                         <div class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                         </div>
                         <p class="text-sm font-medium text-gray-title">目标导向</p>
                     </div>
@@ -246,7 +417,7 @@
 </section>
 
 <!-- ==================== PERSONAL GROWTH (SQCA) ==================== -->
-<section id="growth" class="py-24 bg-gray-bg">
+<section id="growth" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <div class="fade-section text-center mb-16">
             <div class="section-badge bg-primary-light text-primary mb-4">
@@ -257,7 +428,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="fade-left sqca-card bg-white rounded-2xl p-8" style="border-color: #165DFF;">
+            <div class="fade-left sqca-card bg-beige-bg rounded-2xl p-8" style="border-color: #1e3a5f;">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-sm">S</div>
                     <div>
@@ -273,7 +444,7 @@
                     <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span><span><strong class="text-gray-title">目前</strong>：负责UGC创作者增长</span></li>
                 </ul>
             </div>
-            <div class="fade-right sqca-card bg-white rounded-2xl p-8" style="border-color: #F53F3F;">
+            <div class="fade-right sqca-card bg-beige-bg rounded-2xl p-8" style="border-color: #F53F3F;">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-xl bg-danger flex items-center justify-center text-white font-bold text-sm">C</div>
                     <div>
@@ -289,7 +460,7 @@
                     <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-danger mt-2 shrink-0"></span><span><strong class="text-gray-title">价值迷茫</strong>：担心不能更好地学习知识、利用资源</span></li>
                 </ul>
             </div>
-            <div class="fade-left sqca-card bg-white rounded-2xl p-8" style="border-color: #FF7D00;">
+            <div class="fade-left sqca-card bg-beige-bg rounded-2xl p-8" style="border-color: #FF7D00;">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-xl bg-warning flex items-center justify-center text-white font-bold text-sm">Q</div>
                     <div>
@@ -301,7 +472,7 @@
                     <p class="text-gray-title font-medium text-center text-base">如何从被动执行者变成能解决问题、能提效、能抗事的运营？</p>
                 </div>
             </div>
-            <div class="fade-right sqca-card bg-white rounded-2xl p-8" style="border-color: #00B42A;">
+            <div class="fade-right sqca-card bg-beige-bg rounded-2xl p-8" style="border-color: #00B42A;">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-xl bg-accent flex items-center justify-center text-white font-bold text-sm">A</div>
                     <div>
@@ -324,7 +495,7 @@
 </section>
 
 <!-- ==================== PART 2: WORK PERFORMANCE ==================== -->
-<section id="performance" class="py-24 bg-white">
+<section id="performance" class="py-24 bg-beige-bg">
     <div class="max-w-7xl mx-auto px-6">
         <div class="fade-section text-center mb-16">
             <div class="section-badge bg-primary-light text-primary mb-4">
@@ -341,11 +512,11 @@
                 <h3 class="text-xl font-bold text-gray-title">个人成果——PUGC稿件合格率提升 <span class="text-primary">12.07%</span></h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <div class="bg-gray-bg rounded-xl p-5">
+                <div class="bg-white rounded-xl p-5 border border-gray-border">
                     <h4 class="text-sm font-semibold text-gray-caption uppercase tracking-wider mb-2">背景</h4>
                     <p class="text-sm text-gray-body leading-relaxed">多位创作者反馈稿件驳回后，不清楚淘汰原因，改稿、重投无明确方向，无效投稿问题频发。</p>
                 </div>
-                <div class="bg-gray-bg rounded-xl p-5">
+                <div class="bg-white rounded-xl p-5 border border-gray-border">
                     <h4 class="text-sm font-semibold text-gray-caption uppercase tracking-wider mb-2">目的</h4>
                     <p class="text-sm text-gray-body leading-relaxed">依托拒稿自查表帮助创作者精准改稿、减少无效投稿。主动引导稿件二次优化重投，盘活存量投稿内容，提升整体稿件合格率与内容质量。</p>
                 </div>
@@ -401,8 +572,8 @@
                 <p class="text-gray-title">完稿转化率显著提升，PUGC设计师合格→完稿转化率提升 <span class="text-primary font-bold text-2xl num-highlight">6.12%</span></p>
                 <p class="text-sm text-gray-body mt-2">强跟进投稿各环节，切实提升稿件完稿转化率</p>
             </div>
-            <div class="bg-gray-bg rounded-2xl p-4 flex justify-center mt-6">
-                <img src="00.png" alt="完稿转化率提升" class="img-display rounded-xl">
+            <div class="bg-white rounded-2xl p-4 flex justify-center mt-6 border border-gray-border">
+                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/00.png" alt="完稿转化率提升" class="img-display rounded-xl">
             </div>
         </div>
 
@@ -413,11 +584,11 @@
                 <h3 class="text-xl font-bold text-gray-title">个人成果——新增创作者赋能带动目标达成</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <div class="bg-gray-bg rounded-xl p-5">
+                <div class="bg-white rounded-xl p-5 border border-gray-border">
                     <h4 class="text-sm font-semibold text-gray-caption uppercase tracking-wider mb-2">背景</h4>
                     <p class="text-sm text-gray-body leading-relaxed">Q1业务大规模扩招，新增 <strong class="text-gray-title">226名</strong> 设计师。新人普遍不熟悉平台规则与编辑器操作，大幅增加稿件制作时长异常、完稿流失风险。</p>
                 </div>
-                <div class="bg-gray-bg rounded-xl p-5">
+                <div class="bg-white rounded-xl p-5 border border-gray-border">
                     <h4 class="text-sm font-semibold text-gray-caption uppercase tracking-wider mb-2">目的</h4>
                     <p class="text-sm text-gray-body leading-relaxed">精细化运营稿件合格→继续创作→完稿全链路，通过答疑赋能、节奏管控、问题兜底，在创作者体量暴涨的压力下，稳住并提升整体完稿转化率，保障业务产能及时交付。</p>
                 </div>
@@ -437,75 +608,251 @@
                 </div>
             </div>
 
-            <!-- ===== 修改1: 替换图表为原图 ===== -->
             <!-- 每周完成创作者人数 - 原图1 -->
             <div class="fade-section mb-8">
                 <p class="text-base text-gray-title text-center mb-4 font-semibold">Q1 每周完成创作者人数总数较 Q4 翻倍</p>
-                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
-                    <img src="01.png" alt="每周完成创作者人数" class="img-display rounded-xl">
+                <div class="bg-white rounded-2xl p-4 flex justify-center border border-gray-border">
+                    <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/01.png" alt="每周完成创作者人数" class="img-display rounded-xl">
                 </div>
             </div>
             <!-- 新增创作者转化周期 - 原图2 -->
             <div class="fade-section">
                 <p class="text-base text-gray-title text-center mb-4 font-semibold">Q1 新增设计师完稿周期较 Q4 稳定；Q2 较 Q4 完稿周期缩短 0.43 天</p>
-                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
-                    <img src="02.png" alt="新增创作者转化周期" class="img-display rounded-xl">
+                <div class="bg-white rounded-2xl p-4 flex justify-center border border-gray-border">
+                    <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/02.png" alt="新增创作者转化周期" class="img-display rounded-xl">
                 </div>
             </div>
         </div>
 
-        <!-- ===== 修改2: 新增模块 PUGC强保证回稿周期 ===== -->
+        <!-- ===== PUGC强保证回稿周期 ===== -->
         <div class="fade-section mb-20">
             <div class="flex items-center gap-3 mb-8">
                 <div class="w-1.5 h-8 rounded-full bg-primary"></div>
                 <h3 class="text-xl font-bold text-gray-title">个人成果——PUGC强保证回稿周期</h3>
             </div>
-            <div class="bg-gray-bg rounded-2xl p-6 mb-6">
+            <div class="bg-white rounded-2xl p-6 mb-6 border border-gray-border">
                 <p class="text-base text-gray-title text-center mb-4 font-semibold">强跟进稿件流转情况，新手设计师次日触达，回稿平均周期约缩短 3 天</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
-                    <img src="03.png" alt="【周】整体过稿转化周期" class="img-display rounded-xl">
+                <div class="bg-white rounded-2xl p-4 flex justify-center border border-gray-border">
+                    <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/03.png" alt="【周】整体过稿转化周期" class="img-display rounded-xl">
                 </div>
-                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
-                    <img src="04.png" alt="【月】整体过稿转化周期" class="img-display rounded-xl">
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== 修改3: 稿件流转模块 - 改标题 + 配图 ===== -->
-        <div class="fade-section mb-20">
-            <div class="flex items-center gap-3 mb-8">
-                <div class="w-1.5 h-8 rounded-full bg-primary"></div>
-                <h3 class="text-xl font-bold text-gray-title">针对PUGC稿件淘汰稿件与稿件流转，我做了哪些动作</h3>
-            </div>
-
-            <!-- 针对淘汰稿件的动作 - 配图5 -->
-            <div class="mb-8">
-                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
-                    <img src="05.png" alt="针对PUGC淘汰稿件的动作" class="img-display rounded-xl">
-                </div>
-            </div>
-
-            <!-- 针对稿件流转的动作 - 配图6 -->
-            <div>
-                <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
-                    <img src="06.png" alt="针对PUGC稿件流转的动作" class="img-display rounded-xl">
+                <div class="bg-white rounded-2xl p-4 flex justify-center border border-gray-border">
+                    <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/04.png" alt="【月】整体过稿转化周期" class="img-display rounded-xl">
                 </div>
             </div>
         </div>
+
+        <!-- ==================== 模块1: 针对PUGC淘汰稿件的动作 ==================== -->
+        <div class="fade-section mb-20" style="margin-top: 80px;">
+            <h2 class="module-title">针对PUGC淘汰稿件，我做了哪些动作？</h2>
+            <p class="sub-title">分析淘汰稿件质量差异+结合拒稿原因提出意见 → 提升稿件合格率</p>
+            
+            <div class="space-y-8">
+                <!-- 上半部分：稿件修改引导案例 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-border">
+                    <span class="small-title">稿件修改引导全流程</span>
+                    
+                    <!-- 横向流程 -->
+                    <div class="flex items-center justify-between gap-2 mt-6 mb-6">
+                        <div class="flex-1 text-center">
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%873.png" alt="原始淘汰稿" class="img-display img-border rounded-lg" style="max-height: 120px; object-fit: cover;">
+                            </div>
+                            <p class="text-xs text-gray-body">原始淘汰稿</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="flex-1 text-center">
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%874.png" alt="沟通修改1" class="img-display img-border rounded-lg mb-1" style="max-height: 60px; object-fit: cover;">
+                                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%875.png" alt="沟通修改2" class="img-display img-border rounded-lg" style="max-height: 60px; object-fit: cover;">
+                            </div>
+                            <p class="text-xs text-gray-body">沟通引导</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="flex-1 text-center">
+                            <div class="bg-gray-100 rounded-lg p-3 mb-2">
+                                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%876.png" alt="修改后合格稿" class="img-display img-border rounded-lg" style="max-height: 120px; object-fit: cover;">
+                            </div>
+                            <p class="text-xs text-gray-body">修改合格稿</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 下半部分：设计师好评反馈 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-border">
+                    <span class="small-title">切实帮助设计师过稿，收获好评</span>
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%871.png" alt="设计师好评1" class="img-display img-border rounded-lg">
+                        <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%872.png" alt="设计师好评2" class="img-display img-border rounded-lg">
+                    </div>
+                </div>
+            </div>
+            
+            <p class="summary-text">精细化沟通引导，实现淘汰稿件合格与创作者口碑的双丰收</p>
+        </div>
+
+        <!-- ==================== 模块2: PUGC稿件流转处理 ==================== -->
+        <div class="fade-section mb-20" style="margin-top: 80px;">
+            <h2 class="module-title">针对PUGC稿件流转，我做了哪些动作？</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- 左列：对接审核/供应运营 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-border">
+                    <span class="small-title">对接审核/供应运营</span>
+                    
+                    <!-- 子模块1：审核方沟通协作 -->
+                    <div class="mt-6 space-y-4">
+                        <h4 class="font-semibold text-gray-title text-sm border-l-4 border-primary pl-3">审核方沟通协作</h4>
+                        
+                        <div class="pl-4">
+                            <p class="text-sm text-gray-body mb-2">长周期稿件强跟进：确认创作者意向-解决创作者卡点-催审</p>
+                            <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%877.png" alt="催审聊天记录" class="img-display img-border rounded-lg mb-4" style="max-height: 150px; object-fit: contain;">
+                        </div>
+                        
+                        <div class="pl-4">
+                            <p class="text-sm text-gray-body mb-2">发现审核内部标准理解不一致的问题，及时反馈审核端，对齐标准</p>
+                            <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%878.png" alt="反馈审核端" class="img-display img-border rounded-lg mb-4" style="max-height: 150px; object-fit: contain;">
+                        </div>
+                        
+                        <div class="pl-4">
+                            <p class="text-sm text-gray-body mb-2">减少不必要的时间成本，促进稿件流转</p>
+                            <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%879.png" alt="促进稿件流转" class="img-display img-border rounded-lg mb-4" style="max-height: 150px; object-fit: contain;">
+                        </div>
+                        
+                        <div class="pl-4">
+                            <p class="text-sm text-gray-body mb-2">针对编辑器难点问题沟通审核方，录制视频教程，便于设计师理解</p>
+                            <div class="grid grid-cols-2 gap-2">
+                                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8711.png" alt="编辑器教程1" class="img-display img-border rounded-lg" style="max-height: 100px; object-fit: contain;">
+                                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8712.png" alt="编辑器教程2" class="img-display img-border rounded-lg" style="max-height: 100px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 子模块2：供应运营沟通协作 -->
+                    <div class="mt-6 space-y-4">
+                        <h4 class="font-semibold text-gray-title text-sm border-l-4 border-primary pl-3">供应运营沟通协作</h4>
+                        <div class="pl-4">
+                            <p class="text-sm text-gray-body mb-2">沟通供应运营稿件延期、重派等问题</p>
+                            <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8710.png" alt="延期重派沟通" class="img-display img-border rounded-lg" style="max-height: 150px; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 右列：编辑器技能教学 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-border">
+                    <span class="small-title">主动学习编辑器技能，深度理解、传达审核意见</span>
+                    
+                    <div class="mt-6">
+                        <p class="text-sm text-gray-body mb-4">发送规范文件→手把手截图分步教学→发送通用录屏教程（针对理解困难设计师，单独录制教学视频）</p>
+                        <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8713.png" alt="编辑器操作教学" class="img-display img-border rounded-lg">
+                    </div>
+                </div>
+            </div>
+            
+            <p class="summary-text">节点强跟进、标准即时对齐与反馈、教程1v1引导，从源头解决设计师"理解难、修改慢"的痛点</p>
+        </div>
+
+        <!-- ==================== 模块3: PUGC转型UGC痛点1——素材获取不便 ==================== -->
+        <div class="fade-section mb-20" style="margin-top: 80px;">
+            <h2 class="module-title">PUGC设计师转型UGC痛点——素材获取较不方便</h2>
+            
+            <!-- 4个痛点标签 -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="pain-tag">
+                    <p class="text-sm">侧边栏素材搜索不稳定</p>
+                </div>
+                <div class="pain-tag">
+                    <p class="text-sm">花瓣素材下载次数限制，不够用</p>
+                </div>
+                <div class="pain-tag">
+                    <p class="text-sm">AI修改麻烦、不可编辑</p>
+                </div>
+                <div class="pain-tag">
+                    <p class="text-sm">二创容易禁锢灵感，同质化</p>
+                </div>
+            </div>
+            
+            <!-- 设计师反馈截图 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8714.png" alt="设计师反馈素材问题1" class="img-display img-border rounded-lg">
+                <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8715.png" alt="设计师反馈素材问题2" class="img-display img-border rounded-lg">
+            </div>
+            
+            <p class="summary-text">设计师渴望开放素材中心，提升创作效率</p>
+        </div>
+
+        <!-- ==================== 模块4: PUGC转型UGC痛点2——稿件质量&稳定收益 ==================== -->
+        <div class="fade-section mb-20" style="margin-top: 80px;">
+            <h2 class="module-title">PUGC设计师转型UGC痛点——稿件质量、稳定收益</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 左卡片 -->
+                <div class="bg-white rounded-2xl border-2 border-light-blue overflow-hidden">
+                    <div class="bg-primary text-white p-4 text-center">
+                        <h4 class="font-bold">担心稿件质量下降，影响下载</h4>
+                    </div>
+                    <div class="p-4 space-y-4">
+                        <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8716.png" alt="担心无审核修改影响下载量" class="img-display img-border rounded-lg">
+                        <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8717.png" alt="认可审核建议" class="img-display img-border rounded-lg">
+                    </div>
+                </div>
+                
+                <!-- 右卡片 -->
+                <div class="bg-white rounded-2xl border-2 border-light-blue overflow-hidden">
+                    <div class="bg-primary text-white p-4 text-center">
+                        <h4 class="font-bold">担心收益不稳定</h4>
+                    </div>
+                    <div class="p-4">
+                        <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8718.png" alt="收益不稳定，投稿意愿降低" class="img-display img-border rounded-lg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-primary text-white rounded-xl p-6 text-center">
+                <p class="font-medium">创作者既担心失去审核支持后作品质量下滑、影响收益，也因收益的不确定性而降低了持续投稿的意愿</p>
+            </div>
+        </div>
+
+        <!-- ==================== 模块5: UGC创作者增长策略优化建议 ==================== -->
+        <div class="fade-section mb-20" style="margin-top: 80px;">
+            <h2 class="module-title">立足痛点——UGC创作者增长策略优化建议</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 模块1：增设新手培育期 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-border text-center">
+                    <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8719.png" alt="新手成长礼包" class="img-display img-border rounded-lg mb-4 mx-auto" style="max-height: 180px; object-fit: contain;">
+                    <p class="text-sm text-gray-body leading-relaxed">入门缓冲阶段：新手设计师完成3篇合格稿件，30天内可兑换奖励新人专属成长礼包。提升新手设计师稿件质量与投稿意愿。</p>
+                </div>
+                
+                <!-- 模块2：丰富稿豆使用场景 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-border text-center">
+                    <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8720.png" alt="稿豆使用场景" class="img-display img-border rounded-lg mb-4 mx-auto" style="max-height: 180px; object-fit: contain;">
+                    <p class="text-sm text-gray-body leading-relaxed">建立完善的稿豆兑换机制，提升设计师对稿豆的价值认同度</p>
+                </div>
+                
+                <!-- 模块3：创作者分层运营 -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-border text-center">
+                    <img src="file:///c%3A/Users/a1825/AppData/Roaming/TRAE%20SOLO%20CN/ModularData/ai-agent/work-mode-projects/6a0970da56cc9ea2bde25909/%E5%9B%BE%E7%89%8721.png" alt="分层运营体系" class="img-display img-border rounded-lg mb-4 mx-auto" style="max-height: 180px; object-fit: contain;">
+                    <p class="text-sm text-gray-body leading-relaxed">精细化运营，设计分层运营体系</p>
+                </div>
+            </div>
+            
+            <p class="summary-text">新手礼包稳信心，稿豆兑换提动力，分层运营促留存</p>
+        </div>
+
     </div>
 </section>
 
 <!-- ==================== PART 3: CURRENT WORK & REFLECTIONS ==================== -->
-<section id="reflection" class="py-24 bg-gray-bg">
+<section id="reflection" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <div class="fade-section text-center mb-16">
             <div class="section-badge bg-primary-light text-primary mb-4">
                 <span class="text-xs font-bold tracking-wider">PART 03</span>
             </div>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-title mb-3">当前工作与思考</h2>
-            <p class="text-gray-caption text-lg">Current Work & Reflections</p>
+            <p class="text-gray-caption text-lg">Current Work &amp; Reflections</p>
         </div>
 
         <!-- PUGC→UGC Conversion -->
@@ -515,36 +862,36 @@
                 <h3 class="text-xl font-bold text-gray-title">当前工作——PUGC→UGC设计师转化</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <div class="bg-white rounded-xl p-5">
+                <div class="bg-beige-bg rounded-xl p-5 border border-gray-border">
                     <h4 class="text-sm font-semibold text-gray-caption uppercase tracking-wider mb-2">背景</h4>
                     <p class="text-sm text-gray-body leading-relaxed">原PUGC征稿模式流程复杂、门槛较高，Q2全面推进共创模式，规避原有弊端的同时从一次性买断转为分成收益模式。</p>
                 </div>
-                <div class="bg-white rounded-xl p-5">
+                <div class="bg-beige-bg rounded-xl p-5 border border-gray-border">
                     <h4 class="text-sm font-semibold text-gray-caption uppercase tracking-wider mb-2">目的</h4>
                     <p class="text-sm text-gray-body leading-relaxed">通过精细化社群运营，激活新增/潜在创作者，尤其是PUGC优质设计师。推动共创模式落地，实现投稿量与稿件质量双提升。</p>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl p-8 border border-gray-border mb-8">
+            <div class="bg-beige-bg rounded-2xl p-8 border border-gray-border mb-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                     <div class="text-center"><p class="text-sm text-gray-caption mb-1">沟通设计师</p><p class="text-3xl font-bold text-gray-title num-highlight">164<span class="text-lg">名</span></p></div>
-                    <div class="text-center"><p class="text-sm text-gray-caption mb-1">已转化</p><p class="text-3xl font-bold text-primary num-highlight">94<span class="text-lg">名</span></p></div>
-                    <div class="text-center"><p class="text-sm text-gray-caption mb-1">转化进度</p><p class="text-3xl font-bold text-primary num-highlight">57.31<span class="text-lg">%</span></p></div>
+                    <div class="text-center"><p class="text-sm text-gray-caption mb-1">已转化</p><p class="text-3xl font-bold text-primary num-highlight">104<span class="text-lg">名</span></p></div>
+                    <div class="text-center"><p class="text-sm text-gray-caption mb-1">转化进度</p><p class="text-3xl font-bold text-primary num-highlight">63.41<span class="text-lg">%</span></p></div>
                 </div>
-                <div class="w-full bg-gray-bg rounded-full h-4 overflow-hidden">
-                    <div class="h-full bg-gradient-to-r from-primary to-blue-400 rounded-full transition-all duration-1000" style="width: 57.31%"></div>
+                <div class="w-full bg-white rounded-full h-4 overflow-hidden border border-gray-border">
+                    <div class="h-full bg-gradient-to-r from-primary to-blue-400 rounded-full transition-all duration-1000" style="width: 63.41%"></div>
                 </div>
                 <p class="text-xs text-gray-caption mt-3 text-center">针对未投稿优质设计师触达3次，强PUSH PUGC设计师</p>
             </div>
 
             <!-- Unconverted Analysis -->
-            <div class="bg-white rounded-2xl p-8 border border-gray-border">
+            <div class="bg-beige-bg rounded-2xl p-8 border border-gray-border">
                 <h4 class="font-semibold text-gray-title mb-5">问题与思考——PUGC→UGC设计师未转化原因</h4>
-                <p class="text-sm text-gray-body mb-5">70名设计师未转化，占比 <strong class="text-gray-title">42.68%</strong></p>
+                <p class="text-sm text-gray-body mb-5">60名设计师未转化，占比 <strong class="text-gray-title">36.59%</strong></p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bg-warning-light rounded-xl p-4"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因1</span></div><p class="text-sm text-gray-body">担心收益不稳定</p></div>
-                    <div class="bg-warning-light rounded-xl p-4"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因2</span></div><p class="text-sm text-gray-body">现有投稿教程为编辑器教程，觉得编辑器难；告知可以用PS制作后，psd解析需要会员，对未知模式受益存疑；而ps本地元素上传则比较麻烦。</p></div>
-                    <div class="bg-warning-light rounded-xl p-4"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因3</span></div><p class="text-sm text-gray-body">近期忙/生病等</p></div>
-                    <div class="bg-warning-light rounded-xl p-4"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因4</span></div><p class="text-sm text-gray-body">59名优质设计师已经长期不活跃（最近一次投稿日超过30天）</p></div>
+                    <div class="bg-white rounded-xl p-4 border border-gray-border"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因1</span></div><p class="text-sm text-gray-body">担心收益不稳定</p></div>
+                    <div class="bg-white rounded-xl p-4 border border-gray-border"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因2</span></div><p class="text-sm text-gray-body">现有投稿教程为编辑器教程，觉得编辑器难；告知可以用PS制作后，psd解析需要会员，对未知模式受益存疑；而ps本地元素上传则比较麻烦。</p></div>
+                    <div class="bg-white rounded-xl p-4 border border-gray-border"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因3</span></div><p class="text-sm text-gray-body">近期忙/生病等</p></div>
+                    <div class="bg-white rounded-xl p-4 border border-gray-border"><div class="flex items-center gap-2 mb-2"><span class="text-sm font-bold text-warning">原因4</span></div><p class="text-sm text-gray-body">59名优质设计师已经长期不活跃（最近一次投稿日超过30天）</p></div>
                 </div>
             </div>
         </div>
@@ -556,110 +903,73 @@
                 <h3 class="text-xl font-bold text-gray-title">应对措施</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
-                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border">
+                <div class="card-hover bg-beige-bg rounded-2xl p-6 border border-gray-border">
                     <div class="w-8 h-8 rounded-lg bg-primary-light flex items-center justify-center mb-4"><span class="text-primary font-bold text-sm">1</span></div>
                     <h4 class="font-semibold text-gray-title text-sm mb-2">针对收益顾虑</h4>
                     <p class="text-xs text-gray-body leading-relaxed">按共创模式分成方法计算、分析其过往PUGC稿件的下载收益；如收益为负值则放排行榜截图、优质保底等进行沟通；后续建议推出新人成长礼包。</p>
                 </div>
-                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border">
+                <div class="card-hover bg-beige-bg rounded-2xl p-6 border border-gray-border">
                     <div class="w-8 h-8 rounded-lg bg-primary-light flex items-center justify-center mb-4"><span class="text-primary font-bold text-sm">2</span></div>
                     <h4 class="font-semibold text-gray-title text-sm mb-2">针对工具门槛</h4>
                     <p class="text-xs text-gray-body leading-relaxed">提供PUGC征稿的1天模版会员给设计师试用，确保设计师来参与活动，推断体验效果好会持续参加活动。</p>
                 </div>
-                <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border">
+                <div class="card-hover bg-beige-bg rounded-2xl p-6 border border-gray-border">
                     <div class="w-8 h-8 rounded-lg bg-primary-light flex items-center justify-center mb-4"><span class="text-primary font-bold text-sm">3</span></div>
                     <h4 class="font-semibold text-gray-title text-sm mb-2">针对不活跃设计师</h4>
                     <p class="text-xs text-gray-body leading-relaxed">持续跟踪，过一周再次触达并及时记录，对情况进行复盘。持续跟踪优质设计师，针对近60天未活跃设计师进一步触达。</p>
                 </div>
             </div>
         </div>
-
-        <!-- ===== 修改4: 痛点模块补充配图 ===== -->
-        <div class="fade-section mb-16">
-            <div class="flex items-center gap-3 mb-8">
-                <div class="w-1.5 h-8 rounded-full bg-warning"></div>
-                <h3 class="text-xl font-bold text-gray-title">PUGC设计师转型UGC痛点</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- 素材获取痛点 - 配图7 -->
-                <div class="bg-white rounded-2xl p-6 border border-gray-border">
-                    <div class="flex items-center gap-2 mb-4">
-                        <svg class="w-5 h-5 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-                        <h4 class="font-semibold text-gray-title">素材获取较不方便</h4>
-                    </div>
-                    <img src="07.png" alt="素材获取痛点" class="img-display rounded-xl mb-4">
-                </div>
-                <!-- 稿件质量与稳定收益痛点 - 配图8 -->
-                <div class="bg-white rounded-2xl p-6 border border-gray-border">
-                    <div class="flex items-center gap-2 mb-4">
-                        <svg class="w-5 h-5 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
-                        <h4 class="font-semibold text-gray-title">稿件质量、稳定收益</h4>
-                    </div>
-                    <img src="08.png" alt="稿件质量与稳定收益痛点" class="img-display rounded-xl mb-4">
-                </div>
-            </div>
-        </div>
-
-        <!-- ===== 修改5: 优化建议模块添加配图9 ===== -->
-        <div class="fade-section">
-            <div class="flex items-center gap-3 mb-8">
-                <div class="w-1.5 h-8 rounded-full bg-primary"></div>
-                <h3 class="text-xl font-bold text-gray-title">立足痛点——UGC创作者增长策略优化建议</h3>
-            </div>
-            <div class="bg-gray-bg rounded-2xl p-4 flex justify-center">
-                <img src="09.png" alt="UGC创作者增长策略优化建议" class="img-display rounded-xl">
-            </div>
-        </div>
     </div>
 </section>
 
 <!-- ==================== PART 4: POSITIONING & FUTURE ==================== -->
-<section id="future" class="py-24 bg-white">
+<section id="future" class="py-24 bg-beige-bg">
     <div class="max-w-7xl mx-auto px-6">
         <div class="fade-section text-center mb-16">
             <div class="section-badge bg-primary-light text-primary mb-4">
                 <span class="text-xs font-bold tracking-wider">PART 04</span>
             </div>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-title mb-3">个人定位与规划</h2>
-            <p class="text-gray-caption text-lg">Positioning & Future Plans</p>
+            <p class="text-gray-caption text-lg">Positioning &amp; Future Plans</p>
         </div>
 
         <!-- Department Understanding & Positioning -->
         <div class="fade-section mb-16">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div class="bg-gray-bg rounded-2xl p-8">
+                <div class="bg-white rounded-2xl p-8 border border-gray-border">
                     <h3 class="font-bold text-gray-title mb-5 flex items-center gap-2">
-                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                         部门业务理解
                     </h3>
                     <div class="flex items-center justify-center gap-2 mb-6">
                         <div class="px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium">新增</div>
-                        <svg class="w-4 h-4 text-gray-caption" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        <svg class="w-4 h-4 text-gray-caption" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         <div class="px-4 py-2 bg-primary/80 text-white rounded-lg text-sm font-medium">激活</div>
-                        <svg class="w-4 h-4 text-gray-caption" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        <svg class="w-4 h-4 text-gray-caption" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         <div class="px-4 py-2 bg-primary/60 text-white rounded-lg text-sm font-medium">活跃</div>
-                        <svg class="w-4 h-4 text-gray-caption" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        <svg class="w-4 h-4 text-gray-caption" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         <div class="px-4 py-2 bg-primary/40 text-white rounded-lg text-sm font-medium">留存</div>
                     </div>
                     <div class="space-y-3">
-                        <div class="bg-white rounded-lg p-3"><p class="text-xs text-gray-caption mb-1">核心目标</p><p class="text-sm text-gray-title font-medium">创作者激活、活跃、留存，实现平台与创作者双赢</p></div>
-                        <div class="bg-white rounded-lg p-3"><p class="text-xs text-gray-caption mb-1">核心动作</p><p class="text-sm text-gray-title font-medium">全链路运营 · 分层社群维护 · 创作者赋能 · 数据驱动闭环优化</p></div>
+                        <div class="bg-beige-bg rounded-lg p-3 border border-gray-border"><p class="text-xs text-gray-caption mb-1">核心目标</p><p class="text-sm text-gray-title font-medium">创作者激活、活跃、留存，实现平台与创作者双赢</p></div>
+                        <div class="bg-beige-bg rounded-lg p-3 border border-gray-border"><p class="text-xs text-gray-caption mb-1">核心动作</p><p class="text-sm text-gray-title font-medium">全链路运营 · 分层社群维护 · 创作者赋能 · 数据驱动闭环优化</p></div>
                     </div>
                 </div>
-                <div class="bg-primary-light rounded-2xl p-8">
+                <div class="bg-primary-light rounded-2xl p-8 border border-gray-border">
                     <h3 class="font-bold text-gray-title mb-5 flex items-center gap-2">
-                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         个人定位
                     </h3>
-                    <div class="bg-white rounded-xl p-5 mb-4">
+                    <div class="bg-white rounded-xl p-5 mb-4 border border-gray-border">
                         <p class="text-sm font-bold text-primary mb-2">聚焦"新增、潜在创作者激活"</p>
                         <p class="text-sm text-gray-body">作为新增or沉睡设计师的成长陪伴官，实现创作者激活、活跃、留存</p>
                     </div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2 text-sm text-gray-body"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>依托精细化社群运营策略，定向盘活沉睡创作者、激活存量价值</div>
                         <div class="flex items-center gap-2 text-sm text-gray-body"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>沉淀创作者中心流程、常见QA等知识库，利用AI Agent实现创作者自助答疑，提升沟通效率</div>
-                        <div class="flex items-center gap-2 text-sm text-gray-body"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>搭建完善创作者服务体系，以“策略 + AI”双向赋能创作者</div>
-                        <div class="flex items-center gap-2 text-sm text-gray-body"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>洞察创作者需求，输出精细化运营策略，激活新增 & 潜在设计师，推动投稿转化</div>
+                        <div class="flex items-center gap-2 text-sm text-gray-body"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>搭建完善创作者服务体系，以"策略 + AI"双向赋能创作者</div>
+                        <div class="flex items-center gap-2 text-sm text-gray-body"><span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>洞察创作者需求，输出精细化运营策略，激活新增 &amp; 潜在设计师，推动投稿转化</div>
                     </div>
                 </div>
             </div>
@@ -669,17 +979,17 @@
         <div class="fade-section mb-16">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
                 <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border text-center">
-                    <div class="w-12 h-12 mx-auto rounded-xl bg-primary-light flex items-center justify-center mb-4"><svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+                    <div class="w-12 h-12 mx-auto rounded-xl bg-primary-light flex items-center justify-center mb-4"><svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
                     <h4 class="font-bold text-gray-title mb-2">业务规划</h4>
                     <div class="space-y-1 text-xs text-gray-body"><p>更加专业</p><p>更加深入</p><p>更加规模化</p><p>更加高效协同</p></div>
                 </div>
                 <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border text-center">
-                    <div class="w-12 h-12 mx-auto rounded-xl bg-accent-light flex items-center justify-center mb-4"><svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+                    <div class="w-12 h-12 mx-auto rounded-xl bg-accent-light flex items-center justify-center mb-4"><svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg></div>
                     <h4 class="font-bold text-gray-title mb-2">认知规划</h4>
                     <div class="space-y-1 text-xs text-gray-body"><p>学会与AI共舞</p><p>理解算法，学会产品质检</p><p>提升认知视角、策略性思维</p></div>
                 </div>
                 <div class="card-hover bg-white rounded-2xl p-6 border border-gray-border text-center">
-                    <div class="w-12 h-12 mx-auto rounded-xl bg-warning-light flex items-center justify-center mb-4"><svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                    <div class="w-12 h-12 mx-auto rounded-xl bg-warning-light flex items-center justify-center mb-4"><svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
                     <h4 class="font-bold text-gray-title mb-2">个人规划</h4>
                     <div class="space-y-1 text-xs text-gray-body"><p>永远不停下学习的脚步</p><p>善于提问</p><p>学会有效地复盘、更深地思考</p></div>
                 </div>
@@ -716,17 +1026,17 @@
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
                 <div class="card-hover bg-gradient-to-br from-primary to-blue-500 rounded-2xl p-6 text-white">
-                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
                     <h4 class="font-bold mb-2">模式落地</h4>
                     <p class="text-sm text-white/80">搭建可复用的共创创作者运营SOP，实现规模化转化。</p>
                 </div>
                 <div class="card-hover bg-gradient-to-br from-primary to-blue-500 rounded-2xl p-6 text-white">
-                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div>
+                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></div>
                     <h4 class="font-bold mb-2">生态自驱</h4>
                     <p class="text-sm text-white/80">通过持续的社群赋能、激励体系优化与内容引导，推动社群向创作者自主活跃转型。</p>
                 </div>
                 <div class="card-hover bg-gradient-to-br from-primary to-blue-500 rounded-2xl p-6 text-white">
-                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+                    <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg></div>
                     <h4 class="font-bold mb-2">规模质量双优</h4>
                     <p class="text-sm text-white/80">实现创作者规模与优质内容占比同步提升，支撑生态健康发展。</p>
                 </div>
@@ -788,5 +1098,6 @@ window.addEventListener('scroll', () => {
 });
 </script>
 
-</body>
-</html>
+
+
+</body></html>
